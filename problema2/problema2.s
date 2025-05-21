@@ -2,6 +2,8 @@
 _start:
     mov r0, #5 @ x = 5
     mov r1, #1 @ 0! = 1
+	cmp r0, #0
+	beq end
 	
 factorial:
     mul r1, r1, r0 
